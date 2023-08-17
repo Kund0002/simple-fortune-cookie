@@ -10,5 +10,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: test
-      run: echo "hello world"
+    
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Run tests
+      run: go test ./frontend
+      #anything
