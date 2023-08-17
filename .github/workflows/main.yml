@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: golang-latest
+    runs-on: golang:latest
     steps:
 
     - name: Set up Go
