@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.16
+        
+    - name: dep
+      run: sudo apt update && sudo apt install -y gcc
 
     - name: Run tests
       run: go test ./frontend
