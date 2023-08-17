@@ -22,5 +22,5 @@ jobs:
       run: ls
 
     - name: Run tests
-      run: go test ./frontend
+      run: cd frontend && go test
       #anything
